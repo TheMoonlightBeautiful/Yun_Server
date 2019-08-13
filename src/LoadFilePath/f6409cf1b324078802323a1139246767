@@ -1,0 +1,18 @@
+
+a_email,a_name,a_sex,a_password,t_brith,t_register,a_sqlpath
+
+
+         string create_table_student = "CREATE TABLE " + table_name + "(" +
+             "RID INTEGER PRIMARY KEY AUTOINCREMENT," +  //ID
+             "FileName TEXT," +                              //文件名
+             "FileType TEXT," +                              //文件类型
+            "FileSize TEXT," +                              //文件大小
+             "FileDate TEXT," +                              //文件上传时间
+             "FileMd5  TEXT," +                              //文件Md5
+             "FilePath TEXT" +                               //文件Md5
+            ");";
+
+
+sprintf(fun_sql,"create table usrinfo(rid integer primary key autoincrement,a_email varchar(255),a_name varchar(255),a_sex varchar(10),a_password varchar(255),t_brith datetime,t_register datetime,a_sqlpath varchar(255))");
+
+create table FileInfo(RID integer primary key autoincrement,FileName varchar(255),FileType varchar(255),FileSize varchar(255),FileDate datetime,FileMd5 varchar(400),FilePath varchar(255),LoadUsr varchar(255);
